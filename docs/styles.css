@@ -19,6 +19,31 @@
 .post-list li{
   margin: 12px 0;
 }
+
+/* Cover page styles */
+.cover-main ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.cover-main ul li {
+  margin: 1rem 0;
+}
+
+.cover-main ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: var(--accent, #3F51B5);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cover-main ul li a:hover {
+  background: rgba(63, 81, 181, 0.1);
+  border-radius: 4px;
+}
 .tag{
   display:inline-block;
   padding:2px 8px;
