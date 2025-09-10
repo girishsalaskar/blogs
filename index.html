@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>My Docsify Blog</title>
   <link rel="stylesheet" href="//unpkg.com/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="docs/styles.css">
+  <link rel="stylesheet" href="style.css">
   <meta name="theme-color" content="#3F51B5">
 </head>
 <body>
@@ -14,11 +14,18 @@
   <script>
     window.$docsify = {
       name: 'My Docsify Blog',
-      repo: '',
+      repo: 'girishsalaskar/blogs',
       loadSidebar: true,
       loadNavbar: true,
       coverpage: true,
       auto2top: true,
+      basePath: '/blogs/docs/',
+      nameLink: '/blogs/',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      },
+      relativePath: true
     }
   </script>
 
